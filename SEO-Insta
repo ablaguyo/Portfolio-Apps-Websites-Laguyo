@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Bulk Product Listing for E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #6B46C1 0%, #805AD5 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .hero-image {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-purple-800">AIListPro</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-purple-600">Features</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-purple-600">How It Works</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-purple-600">Benefits</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-purple-600">Pricing</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Revolutionize Your E-commerce with AI-Powered Bulk Listing</h1>
+                <p class="text-xl mb-8">Automate product descriptions, image generation, and SEO optimization to scale your online store effortlessly.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#demo" class="bg-white text-purple-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold text-center">Request Demo</a>
+                    <a href="#pricing" class="border-2 border-white hover:bg-white hover:text-purple-800 px-8 py-3 rounded-lg font-semibold text-center">View Pricing</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/2489/2489317.png" alt="AI E-commerce" class="hero-image w-3/4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-6">
+            <p class="text-center text-gray-500 mb-8">Trusted by leading e-commerce brands</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Shopify_logo_2018.svg/2560px-Shopify_logo_2018.svg.png" alt="Shopify" class="h-8 opacity-70">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="Amazon" class="h-8 opacity-70">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Walmart_logo_2010.svg/2560px-Walmart_logo_2010.svg.png" alt="Walmart" class="h-8 opacity-70">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Etsy_logo.png/800px-Etsy_logo.png" alt="Etsy" class="h-8 opacity-70">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/EBay_logo.png/800px-EBay_logo.png" alt="eBay" class="h-8 opacity-70">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Powerful AI Features for Bulk Product Listing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Transform your e-commerce workflow with our cutting-edge AI solutions</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 feature-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-align-left text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Bulk Product Description Generation</h3>
+                    <p class="text-gray-600">AI algorithms analyze product information to generate compelling, SEO-friendly descriptions in bulk, saving you countless hours of manual work.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 feature-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-image text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Bulk Image Generation & Optimization</h3>
+                    <p class="text-gray-600">Create visually appealing product images at scale or optimize existing ones for different platforms with AI-powered image tools.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 feature-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-search text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Automated SEO Optimization</h3>
+                    <p class="text-gray-600">AI analyzes product data to suggest relevant keywords and optimize your listings for better search engine visibility.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 feature-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-exchange-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Easy Import/Export</h3>
+                    <p class="text-gray-600">Seamlessly import product data via CSV or direct integration with platforms like Shopify, and export AI-generated content back to your systems.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 feature-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-language text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Multilingual Support</h3>
+                    <p class="text-gray-600">Expand your global reach with AI that generates product descriptions in multiple languages while maintaining brand consistency.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 feature-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Inventory Insights</h3>
+                    <p class="text-gray-600">AI-powered demand forecasting helps optimize inventory levels to prevent stockouts or overstocking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">How AI Bulk Listing Works</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Simple steps to transform your e-commerce operations</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3271/3271166.png" alt="AI Process" class="w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="space-y-8">
+                        <!-- Step 1 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0 bg-purple-100 rounded-full h-12 w-12 flex items-center justify-center text-purple-600 font-bold mr-4">1</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Upload Your Product Data</h3>
+                                <p class="text-gray-600">Import your product information via CSV or connect directly to your e-commerce platform like Shopify or WooCommerce.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0 bg-purple-100 rounded-full h-12 w-12 flex items-center justify-center text-purple-600 font-bold mr-4">2</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Configure AI Settings</h3>
+                                <p class="text-gray-600">Customize tone of voice, description length, target language, and SEO preferences to match your brand identity.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0 bg-purple-100 rounded-full h-12 w-12 flex items-center justify-center text-purple-600 font-bold mr-4">3</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Generate Content in Bulk</h3>
+                                <p class="text-gray-600">Our AI processes all your products simultaneously, creating optimized descriptions, images, and metadata.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4 -->
+                        <div class="flex">
+                            <div class="flex-shrink-0 bg-purple-100 rounded-full h-12 w-12 flex items-center justify-center text-purple-600 font-bold mr-4">4</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Review & Export</h3>
+                                <p class="text-gray-600">Easily review the AI-generated content, make any adjustments, and export directly back to your e-commerce platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Benefits of AI-Powered Bulk Listing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Why leading e-commerce brands are adopting AI solutions</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-purple-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">80% Time Savings</h3>
+                    <p class="text-gray-600">Automate repetitive tasks and focus on growing your business instead of manual data entry.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-purple-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Cost Reduction</h3>
+                    <p class="text-gray-600">Reduce reliance on expensive content writers or agencies for product descriptions.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-purple-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-bar text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Improved SEO</h3>
+                    <p class="text-gray-600">AI-optimized content helps your products rank higher in search results.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-purple-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-globe text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Global Scalability</h3>
+                    <p class="text-gray-600">Easily expand to new markets with multilingual support and localized content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Customers Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Success stories from e-commerce businesses like yours</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"We listed 500+ products in just 2 days with AIListPro, a task that would have taken our team weeks to complete manually. The quality of descriptions was impressive and required minimal editing."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah J." class="h-12 w-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">Founder, HomeDecor Plus</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The AI-generated product images saved us thousands in photography costs. We can now create variations for different markets and seasons with just a few clicks."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="h-12 w-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Thompson</h4>
+                            <p class="text-gray-500 text-sm">CEO, FashionForward</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Our organic traffic increased by 65% after implementing AIListPro's SEO recommendations. The automated keyword optimization is a game-changer for our product visibility."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Lisa M." class="h-12 w-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Lisa Martinez</h4>
+                            <p class="text-gray-500 text-sm">E-commerce Director, TechGadgets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose the plan that fits your business needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+                    <div class="px-8 py-6">
+                        <h3 class="text-xl font-bold mb-2">Starter</h3>
+                        <p class="text-gray-600 mb-6">Perfect for small businesses getting started</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">$29</span>
+                            <span class="text-gray-500">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Up to 100 products/month</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Basic description generation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>SEO suggestions</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-times text-red-400 mr-2"></i>
+                                <span>No image generation</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-lg text-center">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Popular Plan -->
+                <div class="bg-white rounded-xl shadow-xl border-2 border-purple-500 transform scale-105 z-10 overflow-hidden">
+                    <div class="bg-purple-500 text-white text-center py-2">
+                        <span class="font-semibold">MOST POPULAR</span>
+                    </div>
+                    <div class="px-8 py-6">
+                        <h3 class="text-xl font-bold mb-2">Professional</h3>
+                        <p class="text-gray-600 mb-6">For growing e-commerce businesses</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">$99</span>
+                            <span class="text-gray-500">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Up to 1,000 products/month</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Advanced description generation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Full SEO optimization</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Basic image generation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Multilingual support (5 languages)</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block w-full gradient-bg hover:opacity-90 text-white font-semibold py-3 px-4 rounded-lg text-center">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+                    <div class="px-8 py-6">
+                        <h3 class="text-xl font-bold mb-2">Enterprise</h3>
+                        <p class="text-gray-600 mb-6">For large-scale e-commerce operations</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">$299</span>
+                            <span class="text-gray-500">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Unlimited products</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Premium description generation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Advanced SEO & analytics</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Advanced image generation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Unlimited languages</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Priority support</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-lg text-center">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600">Need a custom solution? <a href="#" class="text-purple-600 font-semibold">Contact our sales team</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="demo" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your E-commerce Business?</h2>
+                <p class="text-xl mb-8">Join thousands of businesses automating their product listings with AI. Start your free 14-day trial today—no credit card required.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="bg-white text-purple-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold text-center">Start Free Trial</a>
+                    <a href="#" class="border-2 border-white hover:bg-white hover:text-purple-800 px-8 py-3 rounded-lg font-semibold text-center">Schedule Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                    <p class="text-xl text-gray-600">Everything you need to know about AI-powered bulk listing</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 focus:outline-none">
+                            <span class="text-lg font-semibold">How accurate are the AI-generated product descriptions?</span>
+                            <i class="fas fa-chevron-down text-purple-600"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Our AI has been trained on millions of high-performing product descriptions across various industries. While we recommend reviewing the content, most customers find that 80-90% of descriptions require minimal to no editing. You can always customize the tone, length, and style to match your brand voice.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 focus:outline-none">
+                            <span class="text-lg font-semibold">Which e-commerce platforms do you integrate with?</span>
+                            <i class="fas fa-chevron-down text-purple-600"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">We offer direct integrations with Shopify, WooCommerce, BigCommerce, Magento, and Amazon Seller Central. For other platforms, you can easily import/export product data via CSV files. Our API also allows for custom integrations with virtually any e-commerce system.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 focus:outline-none">
+                            <span class="text-lg font-semibold">Can I customize the AI output for my brand?</span>
+                            <i class="fas fa-chevron-down text-purple-600"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Absolutely! You can define your brand voice, preferred terminology, description length, and formatting rules. Our AI learns from your edits over time to better match your brand style. You can also create templates for different product categories.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 focus:outline-none">
+                            <span class="text-lg font-semibold">Is my product data secure with your platform?</span>
+                            <i class="fas fa-chevron-down text-purple-600"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Security is our top priority. We use enterprise-grade encryption for all data in transit and at rest. Our systems are regularly audited for compliance with industry security standards. You retain full ownership of your product data at all times.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 5 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 focus:outline-none">
+                            <span class="text-lg font-semibold">What if I need help during implementation?</span>
+                            <i class="fas fa-chevron-down text-purple-600"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">All plans include email support, and our Professional and Enterprise plans come with priority support via chat and phone. We also offer onboarding sessions and have an extensive knowledge base with video tutorials to help you get started quickly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AIListPro</h3>
+                    <p class="text-gray-400">Revolutionizing e-commerce with AI-powered bulk product listing solutions since 2020.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Integrations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Updates</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Roadmap</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Tutorials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Webinars</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">API Docs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 AIListPro. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ toggle functionality
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const content = button.nextElementSibling;
+                
+                // Toggle the hidden class on the content
+                content.classList.toggle('hidden');
+                
+                // Rotate the chevron icon
+                const icon = button.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('transform');
+                    icon.classList.toggle('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
